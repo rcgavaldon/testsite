@@ -1,0 +1,82 @@
+body{
+background-color: #CD5700;  
+ ;
+color: white;
+text-align: center;
+}
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: brown ;
+}
+h1{
+margin-top: 25px;
+}
+.pic1{
+
+width: 100%; 
+/* Set a maximum size */
+height: 100px;
+}
+
+.main-container {
+  display: flex; /* Horizontal alignment */
+  align-items: center; /* Vertical centering */
+  height: 100%; /* Full viewport height */
+  padding: 0 20px; /* Space on sides */
+  box-sizing: border-box;
+}
+.left-images,
+.right-images {
+  display: flex; /* Stack images vertically */
+  flex-direction: column; /* Ensure vertical stacking */
+  justify-content: center; /* Center images vertically */
+  gap: 20px; /* Space between images */
+
+  .side-images{
+    width: 250px;
+    height: auto;
+  }
+ head, html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  @media (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center align items */
+    height: auto; /* Let the container adjust based on content height */
+  }
+
+  .left-images, .right-images {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: row; /* Arrange images horizontally */
+    justify-content: center; /* Center images */
+  }
+
+  .side-images {
+    width: 80px; /* Reduce image size on small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  textarea, input, select {
+    font-size: 1rem; /* Ensure inputs are easy to read */
+    width: 90%; /* Adjust input widths for smaller screens */
+    margin: 0 auto; /* Center-align inputs */
+  }
+
+  button {
+    padding: 0.5rem 1rem; /* Adjust button size */
+    font-size: 1rem;
+  }
+}
